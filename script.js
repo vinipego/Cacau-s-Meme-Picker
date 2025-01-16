@@ -12,16 +12,26 @@ const leticiaThemeBtn = document.querySelector("#theme-leticia");
 vitorThemeBtn.addEventListener("click", (e) => {
   vitorThemeBtn.disabled = true;
   leticiaThemeBtn.disabled = false;
-// add classes with new colors
-  document.querySelector(".header-wrapper").classList.add("header-wrapper-vitor-theme");
+  // add classes with new colors
+  document
+    .querySelector(".header-wrapper")
+    .classList.add("header-wrapper-vitor-theme");
   document.querySelector(".logo").classList.add("logo-vitor-theme");
   document.querySelector(".fieldset").classList.add("fieldset-vitor-theme");
-  document.querySelector(".cacau-span").classList.add("legend-span-vitor-theme");
-  document.querySelector(".emotion-span").classList.add("legend-span-vitor-theme");
+  document
+    .querySelector(".cacau-span")
+    .classList.add("legend-span-vitor-theme");
+  document
+    .querySelector(".emotion-span")
+    .classList.add("legend-span-vitor-theme");
   document.querySelector(".radio").classList.add("radio-vitor-theme");
-  document.querySelector(".get-image-btn").classList.add("get-image-btn-vitor-theme");
+  document
+    .querySelector(".get-image-btn")
+    .classList.add("get-image-btn-vitor-theme");
   document.querySelector(".meme-modal").classList.add("meme-modal-vitor-theme");
-  document.querySelector(".app-wrapper").classList.add("app-wrapper-vitor-theme");
+  document
+    .querySelector(".app-wrapper")
+    .classList.add("app-wrapper-vitor-theme");
 });
 
 leticiaThemeBtn.addEventListener("click", (e) => {
@@ -29,15 +39,27 @@ leticiaThemeBtn.addEventListener("click", (e) => {
   leticiaThemeBtn.disabled = true;
 
   // remove classes with new colors
-  document.querySelector(".header-wrapper").classList.remove("header-wrapper-vitor-theme");
+  document
+    .querySelector(".header-wrapper")
+    .classList.remove("header-wrapper-vitor-theme");
   document.querySelector(".logo").classList.remove("logo-vitor-theme");
   document.querySelector(".fieldset").classList.remove("fieldset-vitor-theme");
-  document.querySelector(".cacau-span").classList.remove("legend-span-vitor-theme");
-  document.querySelector(".emotion-span").classList.remove("legend-span-vitor-theme");
+  document
+    .querySelector(".cacau-span")
+    .classList.remove("legend-span-vitor-theme");
+  document
+    .querySelector(".emotion-span")
+    .classList.remove("legend-span-vitor-theme");
   document.querySelector(".radio").classList.remove("radio-vitor-theme");
-  document.querySelector(".get-image-btn").classList.remove("get-image-btn-vitor-theme");
-  document.querySelector(".meme-modal").classList.remove("meme-modal-vitor-theme");
-  document.querySelector(".app-wrapper").classList.remove("app-wrapper-vitor-theme");
+  document
+    .querySelector(".get-image-btn")
+    .classList.remove("get-image-btn-vitor-theme");
+  document
+    .querySelector(".meme-modal")
+    .classList.remove("meme-modal-vitor-theme");
+  document
+    .querySelector(".app-wrapper")
+    .classList.remove("app-wrapper-vitor-theme");
 });
 
 emotionRadios.addEventListener("change", highlightCheckedOption);
@@ -57,6 +79,17 @@ function highlightCheckedOption(e) {
 function closeModal() {
   memeModal.style.display = "none";
 }
+
+document.addEventListener("click", (e) => {
+  if (
+    memeModal.style.display === "flex" &&
+    !e.target.closest("#meme-modal") &&
+    !e.target.closest("#get-image-btn")
+  ) {
+    console.log("clicked");
+    closeModal();
+  }
+});
 
 function renderCat() {
   const catObject = getSingleCatObject();

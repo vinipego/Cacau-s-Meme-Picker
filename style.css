@@ -12,6 +12,7 @@
   font-weight: 300;
   font-style: normal;
   color: #222;
+  min-height: fit-content;
   height: 100vh;
 }
 
