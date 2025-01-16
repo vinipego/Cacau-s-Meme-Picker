@@ -153,7 +153,7 @@ input[type="radio"] {
   border: 5px solid #0000ff;
   border-radius: 15px;
   /* max-width: 90vw; */
-  max-width: 500px;
+  max-width: 80vw;
   min-width: fit-content;
   height: 60vh;
   background-color: #222;
