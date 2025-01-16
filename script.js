@@ -21,6 +21,7 @@ vitorThemeBtn.addEventListener("click", (e) => {
   document.querySelector(".radio").classList.add("radio-vitor-theme");
   document.querySelector(".get-image-btn").classList.add("get-image-btn-vitor-theme");
   document.querySelector(".meme-modal").classList.add("meme-modal-vitor-theme");
+  document.querySelector(".app-wrapper").classList.add("app-wrapper-vitor-theme");
 });
 
 leticiaThemeBtn.addEventListener("click", (e) => {
@@ -36,6 +37,7 @@ leticiaThemeBtn.addEventListener("click", (e) => {
   document.querySelector(".radio").classList.remove("radio-vitor-theme");
   document.querySelector(".get-image-btn").classList.remove("get-image-btn-vitor-theme");
   document.querySelector(".meme-modal").classList.remove("meme-modal-vitor-theme");
+  document.querySelector(".app-wrapper").classList.remove("app-wrapper-vitor-theme");
 });
 
 emotionRadios.addEventListener("change", highlightCheckedOption);

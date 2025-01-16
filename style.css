@@ -4,7 +4,7 @@
   /* border: 1px dotted green; */
 }
 
-body {
+.app-wrapper {
   /* background-color: #000000; */
   background-color: #ccccff;
   font-family: "Comfortaa", serif;
@@ -12,6 +12,7 @@ body {
   font-weight: 300;
   font-style: normal;
   color: #222;
+  height: 100vh;
 }
 
 .header-wrapper {
@@ -58,7 +59,7 @@ legend {
   padding: 20px;
 }
 
-.legend-span {
+legend span {
   font-weight: 700;
   color: #0000ff;
   text-shadow: 1px 1px #0000ff;
@@ -227,6 +228,9 @@ input[type="radio"] {
 }
 
 /* change theme */
+.app-wrapper-vitor-theme{
+background-color: #ffcccc;
+}
 
 .header-wrapper-vitor-theme{
   border-color: #ff0000;
