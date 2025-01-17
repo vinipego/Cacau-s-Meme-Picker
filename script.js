@@ -86,7 +86,7 @@ document.addEventListener("click", (e) => {
     !e.target.closest("#meme-modal") &&
     !e.target.closest("#get-image-btn")
   ) {
-    console.log("clicked");
+    closeModal();
   }
 });
 
